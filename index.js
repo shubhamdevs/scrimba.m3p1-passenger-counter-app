@@ -1,6 +1,6 @@
 let countEl = document.querySelector("#count-el")
 
-let showEl = document.querySelector("#show-count")
+let showCount = document.querySelector("#show-count")
 
 let count = 0
 
@@ -11,7 +11,7 @@ document.querySelector("#increment-btn").addEventListener("click", function(e) {
 })
 
 document.querySelector("#save-btn").addEventListener("click", function(e) {
-    showEl.innerHTML += ` ${count} -`
-    countEl.innerHTML = 0
+    showCount.innerHTML += ` ${count} -`
     count = 0
+    countEl.innerHTML = count
 })
